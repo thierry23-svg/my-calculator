@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>
+              calculator
+        </title>
+        <style>
+             button {
+            width: 70px;
+            height: 40px;
+            font-size: 1.2em;
+            margin: 5px;
+        }
+        body {
+            margin: 20px;
+            text-align: center;
+        }
+        body{
+            background-image: url("data:image/jpeg;base64,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");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        input,h1{
+            color: bisque;
+        }
+        .display {
+                width: 300px;
+                height: 50px;
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                text-align: right;
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            #demo {
+            color: wheat; 
+            font-size: 1.5em
+            }
+        </style>
+    </head>
+    <body>
+        <h1>enter numbers for calculation</h1>
+        <div class="calculator">
+            <input type="text" id="display" class="display" disabled placeholder="0" />
+        </div>
+        <div>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('6')">6</button><br/>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('2')">2</button><br/>
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="clearDisplay()">clear</button><br/>
+            <button onclick="appendValue('+')">+</button>
+            <button onclick="appendValue('-')">-</button>
+            <button onclick="appendValue('%')">%</button>
+            <button onclick="appendValue('*')">*</button><br/>
+            <button onclick="appendValue('/')">/</button>
+            <button onclick="calculateResult()">=</button>   
+           <p id="test"></p>
+        </div>
+        <script>
+            const display = document.getElementById('display');
+
+            function appendValue(value) {
+            display.value += value;
+        }
+        function clearDisplay() {
+            display.value = '';
+        }
+        function calculateResult() {
+            try {
+                display.value = eval(display.value); 
+            }
+            catch {
+                display.value = 'Error';
+            }
+        }
+        </script>
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+       Time</button>
+        
+        <p id="demo"></p>
+        
+    </body>
+</html>
