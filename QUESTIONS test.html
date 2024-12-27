@@ -1,0 +1,276 @@
+<html>
+     <head>
+    
+    <title>
+        Interactive Quiz App
+    </title>
+    <style>
+        .question {
+            display: none;
+            margin-bottom: 20px;
+        }
+        .question.active {
+            display: block;
+        }
+        button {
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        body {
+            margin: 20px;
+        }
+        [class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+body{
+    margin-left: 500px;
+}
+       </style>
+</head>
+<body>
+    <h2><u>Multiple Choice Quiz :</u></h2>
+
+    <div id="question1" class="question1">
+        <strong>1. Who is known as the father of computers?</strong><br>
+        <label><input type="radio" name="question1" value="Alan Turing"required> A. Alan Turing</label><br>
+        <label><input type="radio" name="question1" value="Charles Babbage"> B. Charles Babbage</label><br>
+        <label><input type="radio" name="question1" value="John von Neumann"> C. John von Neumann</label><br>
+        <label><input type="radio" name="question1" value="Thomas Edison"> D. Thomas Edison</label><br>
+        <button onclick="nextQuestion(1)">Next</button>
+        
+    </div>
+
+    <div id="question2" class="question2">
+        <strong>2. What does "HTML" stand for?</strong><br>
+        <label><input type="radio" name="question2" value="HyperText Machine Language"> A. HyperText Machine Language</label><br>
+        <label><input type="radio" name="question2" value="HyperText Markup Language"> B. HyperText Markup Language</label><br>
+        <label><input type="radio" name="question2" value="HighText Markup Language"> C. HighText Markup Language</label><br>
+        <label><input type="radio" name="question2" value="HyperTransfer Markup Language"> D. HyperTransfer Markup Language</label><br>
+        <button onclick="nextQuestion(2)">Next</button>
+    </div>
+
+    <div id="question3" class="question3">
+        <strong>3. What does "CPU" stand for?</strong><br>
+        
+        <label><input type="radio" name="question3" id="display"value="Central Printing Unit">A. Central Printing Unit </label><br>
+        <label><input type="radio" name="question3" id="display"value="Control Processing Unit">B. Control Processing Unit</label><br>
+        <label><input type="radio" name="question3"id="display" value="Central Processing Unit">C. Central Processing Unit</label><br>
+        <label><input type="radio" name="question3"id="display" value="Computer Processing Unit" > D. Computer Processing Unit</label><br>
+        <button onclick="nextQuestion(3)">Next</button>
+    </div><br>
+
+    <div id="question4" class="question4">
+        <strong>4. What is the name of the first computer programmer?</strong><br>
+        
+        <label><input type="radio" name="question4" id="display"value="Ada Lovelace">A. Ada Lovelace</label><br>
+        <label><input type="radio" name="question4" id="display"value="Grace Hopper">B. Grace Hopper</label><br>
+        <label><input type="radio" name="question4"id="display" value="Margaret Hamilton">C. Margaret Hamilton </label><br>
+        <label> <input type="radio" name="question4"id="display" value="Tim Berners-Lee"> D. Tim Berners-Lee</label><br>
+        <button onclick="nextQuestion(4)">Next</button>
+    </div><br>
+    
+    <div id="question5" class="question5">
+        <strong>5. Which company created the iPhone?</strong><br>
+         
+        <label><input type="radio" name="question5" id="display"value="Microsoft">A. Microsoft</label><br>
+        <label><input type="radio" name="question5"id="display" value="Google">B. Google</label>
+        <label><input type="radio" name="question5"id="display" value="Apple">C. Apple</label><br>
+        <label><input type="radio" name="question5"id="display" value="Samsung" >D. Samsung</label><br>
+        <button onclick="nextQuestion(5)">Next</button>
+    </div><br>
+    
+    <div id="question6" class="question6">
+        <strong>6. What is the primary function of RAM in a computer?</strong><br>
+         
+        <label><input type="radio" name="question6" id="display"value="To store permanent data">A. To store permanent data</label><br>
+        <label><input type="radio" name="question6" id="display"value="To execute arithmetic calculations"> B. To execute arithmetic calculations</label><br>
+        <label><input type="radio" name="question6" id="display"value="To temporarily store data for quick access"> C. To temporarily store data for quick access</label><br>
+        <label><input type="radio" name="question6" id="display"value="To process graphical data">D. To process graphical data </label><br>
+        <button onclick="nextQuestion(6)">Next</button>
+        </div>
+         
+        <div id="question7" class="question7">
+            <strong>7. Which programming language is known as the "language of the web"?</strong><br>
+             
+            <label><input type="radio" name="question7"id="display" value="Python" >A. Python</label><br>
+            <label><input type="radio" name="question7"id="display" value="C++">B. C++</label><br>
+            <label><input type="radio" name="question7"id="display" value="JavaScript">. JavaScript</label><br>
+            <label> <input type="radio" name="question7"id="display" value="Java" >D. Java</label><br>
+            <button onclick="nextQuestion(7)">Next</button>
+        </div><br>
+
+        <div id="question8" class="question8">
+            <strong>8. What does "IoT" stand for?</strong><br>
+             
+            <label><input type="radio" name="question8" id="display"value="Internet of Technology"> A. Internet of Technology</label><br>
+            <label> <input type="radio" name="question8" id="display"value="Integration of Things"> B. Integration of Things</label><br>
+            <label><input type="radio" name="question8" id="display"value="Internet of Things"> C. Internet of Things</label><br>
+            <label><input type="radio" name="question8"id="display" value="Information of Technology" >D. Information of Technology </label><br>
+            <button onclick="nextQuestion(8)">Next</button>
+        </div><br>
+
+        <div id="question9" class="question9">
+            <strong>9. Who invented the World Wide Web?</strong><br>
+             
+            <label><input type="radio" name="question9"id="display" value="Bill Gates" > A. Bill Gates</label><br>
+            <label><input type="radio" name="question9"id="display" value="Steve Jobs"> B. Steve Jobs</label><br>
+            <label><input type="radio" name="question9"id="display" value="Tim Berners-Lee">C. Tim Berners-Lee</label><br>
+            <label><input type="radio" name="question9" id="display"value="Larry Page" >D. Larry Page</label><br>
+            <button onclick="nextQuestion(9)">Next</button>
+        </div><br>
+
+        <div id="question10" class="question10">
+            <strong>10. Which of the following is not an operating system?</strong><br>
+             
+            <label><input type="radio" name="question10" id="display"value="Windows"> A. Windows </label><br>
+            <label><input type="radio" name="question10" id="display"value="Linux"> B. Linux</label><br>
+            <label><input type="radio" name="question10" id="display"value="Python"> C. Python</label><br>
+            <label><input type="radio" name="question10" id="display"value="macOS" > D. macOS</label><br>
+            <button onclick="nextQuestion(10)">Next</button>
+        </div><div id="submitSection" class="question">
+        <h3>You have completed the quiz!</h3>
+        <button onclick="submit()">Submit</button>
+    </div>
+    
+
+    <script>
+        function nextQuestion(currentQuestion) {
+            // Hide current question
+            document.getElementById(`question${currentQuestion}`).classList.remove('active');
+            
+            // Show the next question
+            const nextQuestionElement = document.getElementById(`question${currentQuestion + 1}`);
+            if (nextQuestionElement) {
+                nextQuestionElement.classList.add('active');
+            } else {
+                // If there are no more questions, show the submit section
+                document.getElementById('submitSection').classList.add('active');
+            }
+        }
+
+        <button onclick="submit()">submit</button>
+                          
+                            
+                           function submit() {
+                           alert("you submited your Quiz.");
+                
+                          window.location.href = "submit.html"; 
+                           }
+
+                           const correctAnswers = {
+    'question1': 'Charles Babbage',
+    'question2': 'HyperText Markup Language',
+    'question3': 'Central Processing Unit',
+    'question4': 'Ada Lovelace',
+    'question5': 'Apple',
+    'question6': 'To temporarily store data for quick access',
+    'question7': 'JavaScript',
+    'question8': 'Internet of Things',
+    'question9': 'Tim Berners-Lee',
+    'question10': 'Python'
+};
+
+function calculateScore() {
+    let score = 0;
+    let totalQuestions = Object.keys(correctAnswers).length;
+    let detailedResults = [];
+
+    // Loop through each question
+    for (let i = 1; i <= totalQuestions; i++) {
+        const questionName = `question${i}`;
+        const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+        
+        if (selectedAnswer) {
+            // Add to score if answer is correct
+            if (selectedAnswer.value === correctAnswers[questionName]) {
+                score++;
+                detailedResults.push(`Question ${i}: Correct`);
+            } else {
+                detailedResults.push(`Question ${i}: Incorrect - You selected "${selectedAnswer.value}". Correct answer was "${correctAnswers[questionName]}"`);
+            }
+        } else {
+            detailedResults.push(`Question ${i}: No answer selected`);
+        }
+    }
+
+    // Calculate percentage
+    const percentage = (score / totalQuestions) * 100;
+
+    // Display results
+    const results = `
+        Score: ${score} out of ${totalQuestions}
+        Percentage: ${percentage}%
+
+        Detailed Results:
+        ${detailedResults.join('\n')}
+    `;
+
+    alert(results);
+    return {
+        score,
+        percentage,
+        detailedResults
+    };
+}
+
+// Replace the existing submit function with this enhanced version
+function submit() {
+    const result = calculateScore();
+    
+    // You can modify this to store the results or redirect with the score
+    if (result.percentage >= 70) {
+        alert("Congratulations! You passed the quiz!");
+    } else {
+        alert("You might want to review the material and try again.");
+    }
+    window.location.href = "submit.html"; 
+    // Optional: still redirect to submit.html if needed
+    // window.location.href = "submit.html";
+}
+         </script>
+    
+          
+           </body>
+       
+         </html>
